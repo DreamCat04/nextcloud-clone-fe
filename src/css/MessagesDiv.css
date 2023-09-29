@@ -1,0 +1,8 @@
+.messagesDiv{
+    float: right;
+    width: 80%;
+    background-color: #333333;
+}
+.messagesDiv p{
+    color: white;
+}
