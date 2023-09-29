@@ -6,3 +6,6 @@
 .messagesDiv p{
     color: white;
 }
+.message {
+    float: left;
+}
