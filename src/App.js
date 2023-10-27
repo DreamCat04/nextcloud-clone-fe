@@ -1,12 +1,14 @@
 import './App.css';
 import ContactsDiv from './components/ContactsDiv';
-import MessagesDiv from './components/MessagesDiv';
+import MessagesContainer from './components/Message';
+import { useState } from 'react';
 
 function App() {
+  const [messages, setMessages] = useState([]);
   return (
     <div className="App">
       <ContactsDiv></ContactsDiv>
-      <MessagesDiv></MessagesDiv>
+      <MessagesContainer></MessagesContainer>
     </div>
   );
 }
