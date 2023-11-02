@@ -1,8 +1,8 @@
 import '../css/Message.css'
 
-function Message({text, sender}) {
+function Message({id, text, sender}) {
     return (
-      <div className={`message ${sender}`}>
+      <div className={`message_${sender}`}>
         <p>{text}</p>
       </div>
     );
