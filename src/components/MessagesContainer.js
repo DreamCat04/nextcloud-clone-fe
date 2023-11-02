@@ -17,8 +17,8 @@ function MessagesContainer(){
 
     return(
         <div className='messagesContainer'>
-            {messages.map((message) => (
-            <Message text={message.text} sender={message.sender}/>
+            {messages.map((message, index) => (
+            <Message id={index} text={message.text} sender={message.sender}/>
             ))}
             <MessageInputForm></MessageInputForm>
         </div>
