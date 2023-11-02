@@ -1,6 +1,9 @@
+import axios from "axios";
+import { useState } from "react";
+
 async function sendMessageToAPI(message){
     try {
-    const response = await axios.post('/api/messages', {
+    const response = await axios.post('http://localhost:5000/api/messages', {
       message: message,
     });
     console.log('Message sent successfully:', response.data);
@@ -11,9 +14,10 @@ async function sendMessageToAPI(message){
   }
 }
 
-function MessageBox(){
+function MessageInputForm(){
+  const [message, setMessage] = useState();
     return (
-        <div className="messageBox">
+        <div className="messageInputForm">
             <input
             type="text"
             value={message}
@@ -24,4 +28,4 @@ function MessageBox(){
     );
 }
 
-export default MessageBox;
+export default MessageInputForm;
