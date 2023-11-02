@@ -1,9 +1,9 @@
 import '../css/Message.css'
 
-function Message({ text, sender }) {
+function Message({text, sender}) {
     return (
-      <div className={`message ${sender === 'user' ? 'user-message' : 'other-message'}`}>
-        {text}
+      <div className={`message ${sender}`}>
+        <p>{text}</p>
       </div>
     );
 }
