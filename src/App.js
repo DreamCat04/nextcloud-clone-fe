@@ -1,6 +1,6 @@
 import './App.css';
 import ContactsDiv from './components/ContactsDiv';
-import MessagesContainer from './components/Message';
+import MessagesContainer from './components/MessagesContainer';
 
 function App() {
   return (
