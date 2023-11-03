@@ -1,11 +1,9 @@
-body {
-  height: 100%;
-}
 .App {
   text-align: center;
   height: 100%;
   display: grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 20% 60% 20%;
+  background-color: #333333;
 }
 
 .App-logo {
