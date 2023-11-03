@@ -2,6 +2,7 @@ import Message from './Message'
 import axios from 'axios';
 import MessageInputForm from './MessageInputForm';
 import { useState, useEffect } from 'react';
+import '../css/MessagesContainer.css';
 
 function MessagesContainer(){
     const [messages, setMessages] = useState([]);
@@ -18,7 +19,7 @@ function MessagesContainer(){
     return(
         <div className='messagesContainer'>
             {messages.map((message, index) => (
-            <Message text={message.text} sender={message.sentBy} avatar={''} date={message.sentAt} isMyMessage={true}/>
+            <Message text={message.text} sender={message.sentBy} avatar={'/img/user-profile-picture.png'} date={message.sentAt} isMyMessage={true}/>
             ))}
             <MessageInputForm></MessageInputForm>
         </div>
