@@ -4,7 +4,7 @@ import { useState } from "react";
 async function sendMessageToAPI(message){
     try {
     const response = await axios.post('http://localhost:5000/api/messages', {
-      message: message,
+      text: message,
     });
     console.log('Message sent successfully:', response.data);
     // Handle success, update the UI, etc.
