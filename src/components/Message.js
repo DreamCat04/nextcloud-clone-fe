@@ -1,9 +1,9 @@
 import '../css/Message.css'
 
-function Message({ text, sender, avatar, date, isMyMessage }) {
+function Message({ text, sender, avatar, date }) {
   return (
-    <div className={`message ${isMyMessage ? 'my-message' : 'opponent-message'}`}>
-      <div className="message-avatar">
+    <div className={`message`}>
+      <div className="user-avatar">
         <img src={avatar} alt={`${sender}'s avatar`} />
       </div>
       <div className="message-content">
