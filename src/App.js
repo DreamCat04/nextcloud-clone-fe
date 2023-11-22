@@ -1,13 +1,19 @@
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
-import ContactsDiv from './components/ContactsDiv';
-import MessagesContainer from './components/MessagesContainer';
+import MainPage from './pages/MainPage';
+import Login from './pages/Login';
 
 function App() {
   return (
-    <div className="App">
-      <ContactsDiv></ContactsDiv>
-      <MessagesContainer></MessagesContainer>
-    </div>
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path='/' element={<MainPage/>}></Route>
+          <Route path='/login' element={<Login/>}></Route>
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
