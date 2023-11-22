@@ -9,12 +9,13 @@ function MessagesContainer(){
     const [messages, setMessages] = useState([]);
 
     useEffect(() => {
+    // Fetch messages and set the state here
     axios.get('http://localhost:5000/api/messages').then((response) => {
         setMessages(response.data);
         }).catch((error) => {
         console.error('Error fetching messages:', error);
         });
-    }, [messages]);
+    }, []);
 
     return(
         <div className='messagesContainer'>
