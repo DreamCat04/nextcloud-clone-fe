@@ -59,12 +59,32 @@
   cursor: pointer;
 }
 
-.delete-button {
-  background-color: transparent;
-}
 .edit-button:hover{
   background-color: #4caf50;
 }
+
 .delete-button:hover{
+  background-color: #f44336;
+}
+
+.save-button,
+.cancel-button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.save-button:hover{
+  background-color: #4caf50;
+}
+
+.cancel-button:hover{
   background-color: #f44336;
 }
