@@ -15,7 +15,7 @@ function MessagesContainer(){
         }).catch((error) => {
         console.error('Error fetching messages:', error);
         });
-    }, []);
+    }, [messages]);
 
     return(
         <div className='messagesContainer'>
