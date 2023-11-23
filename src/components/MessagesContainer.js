@@ -20,7 +20,7 @@ function MessagesContainer(){
     return(
         <div className='messagesContainer'>
             {messages.map((message, index) => (
-            <Message text={message.text} sender={message.sentBy} avatar={avatarImg} date={message.sentAt}/>
+            <Message id={index} text={message.text} sender={message.sentBy} avatar={avatarImg} date={message.sentAt}/>
             ))}
             <MessageInputForm></MessageInputForm>
         </div>
