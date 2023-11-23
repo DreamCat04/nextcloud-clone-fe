@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import '../css/MessageInputForm.css'
 
 function MessageInputForm(){
 
@@ -19,6 +20,7 @@ function MessageInputForm(){
       <div className="messageInputForm">
           <input
           type="text"
+          className="messageBox"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           />

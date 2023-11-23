@@ -1,0 +1,6 @@
+.messageBox{
+    width: 300px;
+    height: auto;
+    white-space: pre-wrap;
+    overflow-y: hidden;
+}
